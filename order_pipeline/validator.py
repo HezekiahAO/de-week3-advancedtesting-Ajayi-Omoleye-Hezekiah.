@@ -38,7 +38,7 @@ elif isinstance(shoplink, dict):
     # Single object, not a list
     missing = required_fields - shoplink.keys()
     if missing:
-        print("❌ Missing fields:", missing)
+        print("Missing fields:", missing)
     else:
         print(" All required fields are present.")
 

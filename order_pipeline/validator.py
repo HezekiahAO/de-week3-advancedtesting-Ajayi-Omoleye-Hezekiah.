@@ -22,7 +22,7 @@ required_fields = {"order_id", "timestamp", "item", "quantity", "price", "paymen
 #Iterate directly over each record
 if isinstance(shoplink, list):
     if not shoplink:
-        print("⚠️ shoplink.json is empty — no records found.")
+        print("shoplink.json is empty — no records found.")
     else:
         for i, record in enumerate(shoplink, start=1):
             if isinstance(record, dict):

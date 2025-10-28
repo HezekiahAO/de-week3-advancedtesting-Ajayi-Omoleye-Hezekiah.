@@ -11,10 +11,10 @@ def load_json_list(shoplink: str):
     
     if os.path.getsize(file_path) == 0:
         raise ValueError("The file is empty")
-                                                            # Reads data from JSON file.
-    with open(file_path, "r", encoding="utf-8") as f:
+                                                            # Reads data from JSON file with an encoding of 'utf-8'
+    with open(file_path, "r", encoding="utf-8") as b:
         try:
-            shoplink = json.load(f)
+            shoplink = json.load(b)
 
         except json.JSONDecodeError as e:
             raise ValueError(f"Invalid JSON format: {e}")
